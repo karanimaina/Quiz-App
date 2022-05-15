@@ -52,7 +52,15 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                mar>
+                android:layout_marginTop="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+<!--                compatible to all the versions-->
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#363A43"
+                    android:hint="Name"/>
 
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>

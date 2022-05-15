@@ -13,6 +13,20 @@
         android:orientation="vertical"
         android:padding="16dp"
         android:gravity="center">
+<TextView
+    android:id="@+id/tv_wuestion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:textColor="363A43"
+    android:textStyle="bold"
+    android:textSize="22sp"
+    android:gravity="center"
+    android:text="What cuntry does this flag belong to? "
+    />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
     </LinearLayout>
 

@@ -5,5 +5,7 @@ object  Constants{
         // create an array of questions
         val  questionsList = ArrayList<Question>()
         val que1 = Question(1,"what country does this flag belong to?",R.drawable.belgium,"Argentima","Belgium","mauritius","Kenya",1)
+        questionsList.add(que1)
+        return  questionsList
     }
 }

@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this,QuizUiActivity2::class.java)
                 intent.putExtra(Constants.USER_NAME,binding.etName.text.toString())
                 startActivity(intent)
+
                 finish()
             }
         }

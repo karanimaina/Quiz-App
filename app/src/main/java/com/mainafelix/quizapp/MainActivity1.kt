@@ -1,7 +1,9 @@
 package com.mainafelix.quizapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.mainafelix.quizapp.databinding.ActivityMain1Binding
 
 class MainActivity1 : AppCompatActivity() {
@@ -11,7 +13,16 @@ class MainActivity1 : AppCompatActivity() {
        binding = ActivityMain1Binding.inflate(layoutInflater)
         val view  = binding.root
         setContentView(view)
-        binding.btnStart.setOnClickListener {  }
+        binding.btnStart.setOnClickListener {
+            if( binding.etName.text.toString().isEmpty()){
+                Toast.makeText(this, "please enter your name", Toast.LENGTH_LONG).show()
+             }else{
+            val intent = Intent(this,QuizUiQuestionActivity::class.java)
+            intent.putExtra(Constants.USER_NAME,binding.etName.text.toString())
+            startActivity(intent)
+            finish()
+        }
+        }
 
     }
 }

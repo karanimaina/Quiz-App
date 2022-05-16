@@ -29,6 +29,7 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
 
         mQuestionsList = Constants.getQuestion()
         SetQuestion()
+
         binding.tvOptionOne.setOnClickListener (this)
         binding.tvOptionTwo.setOnClickListener (this)
         binding.tvOptionThree.setOnClickListener (this)

@@ -17,6 +17,7 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
     private var  mSelectedPosition: Int = 0
     private  var correctAnswes:Int = 0
     private var  userName:String?= null
+
     private lateinit var binding:ActivityQuizUi2Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

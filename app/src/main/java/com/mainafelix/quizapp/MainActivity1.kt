@@ -11,7 +11,7 @@ class MainActivity1 : AppCompatActivity() {
        binding = ActivityMain1Binding.inflate(layoutInflater)
         val view  = binding.root
         setContentView(view)
-        binding.
+        binding.btnStart.setOnClickListener {  }
 
     }
 }

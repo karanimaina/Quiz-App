@@ -7,25 +7,25 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.mainafelix.quizapp.databinding.ActivityMain1Binding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding:ActivityMain1Binding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //code for removing the system ui
-        window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
-        val btn = findViewById<Button>(R.id.btnStart)
-        val editTextName = findViewById<EditText>(R.id.etName)
-
-        btn.setOnClickListener {
-            if (editTextName.toString().isEmpty()){
-                Toast.makeText(this, "please enter your name",Toast.LENGTH_LONG).show()
+        binding = ActivityMain1Binding.inflate(layoutInflater)
+        val view  = binding.root
+        setContentView(view)
+        binding.btnStart.setOnClickListener {
+            if( binding.etName.text.toString().isEmpty()){
+                Toast.makeText(this, "please enter your name", Toast.LENGTH_LONG).show()
             }else{
-                val intent =Intent(this,QuizUiQuestionActivity::class.java)
-                intent.putExtra(Constants.USER_NAME,editTextName.text.toString())
+                val intent = Intent(this,QuizUiQuestionActivity::class.java)
+                intent.putExtra(Constants.USER_NAME,binding.etName.text.toString())
                 startActivity(intent)
                 finish()
             }
         }
+
     }
 }

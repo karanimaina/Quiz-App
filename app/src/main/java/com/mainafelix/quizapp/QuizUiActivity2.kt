@@ -27,7 +27,6 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
         setContentView(view)
         userName = intent.getStringExtra(Constants.USER_NAME)
 
-
         mQuestionsList = Constants.getQuestion()
         SetQuestion()
         binding.tvOptionOne.setOnClickListener (this)

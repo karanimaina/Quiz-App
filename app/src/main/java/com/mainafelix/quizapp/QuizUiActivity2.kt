@@ -38,7 +38,6 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
 
     }
     private fun SetQuestion(){
-
         val question = mQuestionsList!![mCurrentPosition-1]
         defaultOptinsView()
         if (mCurrentPosition == mQuestionsList!!.size){

@@ -70,6 +70,7 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
         options.add(2, binding.tvOptionThree)
         options.add(3,binding.tvOptionFour)
 
+
         for (option in options){
             option.setTextColor(Color.parseColor("#7A8089"))
             //  typeFace can be Bold default etc

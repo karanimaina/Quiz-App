@@ -14,6 +14,7 @@ import com.mainafelix.quizapp.databinding.ActivityQuizUi2Binding
 class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
     private  var mCurrentPosition:Int = 1
     private var  mQuestionsList:List<Question>? = null
+
     private var  mSelectedPosition: Int = 0
     private  var correctAnswes:Int = 0
     private var  userName:String?= null

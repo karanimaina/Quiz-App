@@ -54,6 +54,7 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
         //set the Question
         binding.tvWuestion.text =  question!!.question
 
+
        binding.IvImage.setImageResource(question.image)
       binding.tvOptionOne.text= question.optionOne
       binding.tvOptionTwo.text= question.optionTwo
@@ -65,6 +66,7 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
         val options = ArrayList<TextView>()
         options.add(0, binding.tvOptionOne)
         options.add(1, binding.tvOptionTwo)
+
         options.add(2, binding.tvOptionThree)
         options.add(3,binding.tvOptionFour)
 

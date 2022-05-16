@@ -44,6 +44,7 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
            binding.btnSubmit.text = "FINISH"
         }else {
             binding.btnSubmit.text =  "SUBMIT"
+
         }
         binding.progressBar.progress = mCurrentPosition
         //set the progressbar equivalent to the textview

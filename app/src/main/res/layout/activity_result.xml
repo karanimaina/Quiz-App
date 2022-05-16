@@ -10,7 +10,7 @@
     android:padding="20dp"
     tools:context=".ResultActivity">
     <TextView
-        android:id="@+id/tv_result"
+        android:id="@+id/tvResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/images1" />
     <TextView
-        android:id="@+id/tv_cogratulations"
+        android:id="@+id/tvCogratulations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -34,7 +34,7 @@
         android:textSize="25sp"
         android:textStyle="bold"/>
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -43,7 +43,7 @@
         android:textSize="22sp"
         android:textStyle="bold"/>
     <TextView
-        android:id="@+id/tv_score"
+        android:id="@+id/tvScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -52,7 +52,7 @@
         android:textSize="20sp"
         android:textStyle="italic"/>
     <Button
-        android:id="@+id/btn_finish"
+        android:id="@+id/btnFinish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"

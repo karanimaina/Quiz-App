@@ -50,6 +50,7 @@ class QuizUiActivity2 : AppCompatActivity(), View.OnClickListener {
 
         //set the progressbar equivalent to the textview
         binding.tvProgress.text = "$mCurrentPosition"+"/"+ binding.progressBar.max
+
         //set the Question
         binding.tvWuestion.text =  question!!.question
 
